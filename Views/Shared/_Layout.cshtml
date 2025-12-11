@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"] - Bookstore</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+</head>
+
+<body style="background-color:#1a1a1a; color:white;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark" style="background-color:#b30000;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/Book/Index">Simple Bookstore</a>
+
+            <a href="/Book/OrderHistory"
+               class="btn btn-outline-light">
+                Order History
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        @RenderBody()
+    </div>
+</body>
+</html>

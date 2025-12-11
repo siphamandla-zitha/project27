@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Book Order";
+}
+
+<div class="container mt-4">
+    <h2>Book Order Form</h2>
+    <hr />
+
+    <form method="post" action="/Book/SubmitOrder">
+
+        <label>Customer Name:</label>
+        <input type="text" name="customerName" class="form-control" required />
+
+        <label class="mt-3">Select Book:</label>
+        <select name="bookTitle" class="form-control">
+            <option value="The Great Gatsby">The Great Gatsby</option>
+            <option value="1984">1984</option>
+            <option value="To Kill a Mockingbird">To Kill a Mockingbird</option>
+        </select>
+
+        <label class="mt-3">Quantity:</label>
+        <input type="number" name="quantity" min="1" value="1" class="form-control" />
+
+        <button type="submit" class="btn btn-primary mt-4">Order Book</button>
+
+    </form>
+</div>
